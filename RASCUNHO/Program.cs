@@ -1,28 +1,17 @@
-﻿using System;
+﻿Console.WriteLine("Comprimento do terreno:");
+double comprimento = Convert.ToDouble(Console.ReadLine());
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        Console.WriteLine("Digite a quantidade de loops para a sequência Fibonacci");
-            int n;
-            int x = 1, y = 0, z = 0;
-            n = int.Parse(Console.ReadLine());
+Console.WriteLine("Largura do terreno:");
+double largura = Convert.ToDouble(Console.ReadLine());
 
-            for (int i = 0; i < n; i++)
-            {
-                z = x + y;
-                Console.WriteLine(z);
-                y = x;
-                x = z;
-            }
-            
-        }
-    }
+Console.WriteLine("Preço do mt2 do terreno:");
+double preço = Convert.ToDouble(Console.ReadLine());
 
+double area = comprimento * largura;
+double preçoTotal = area * preço;
 
-
-
+Console.WriteLine("A area do terreno é: " + area);
+Console.WriteLine("O preço do terreno é: " + preçoTotal);
 
 
 
