@@ -1,19 +1,24 @@
-﻿Console.WriteLine("Comprimento do terreno:");
-double comprimento = Convert.ToDouble(Console.ReadLine());
+﻿double bse, altura, area, perimetro, diagonal;
 
-Console.WriteLine("Largura do terreno:");
-double largura = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("BASE DO RETANGULO: ");
+bse = double.Parse(Console.ReadLine());
 
-Console.WriteLine("Preço do mt2 do terreno:");
-double preço = Convert.ToDouble(Console.ReadLine());
-
-double area = comprimento * largura;
-double preçoTotal = area * preço;
-
-Console.WriteLine("A area do terreno é: " + area);
-Console.WriteLine("O preço do terreno é: " + preçoTotal);
+Console.WriteLine("ALTURA DO RETANGULO: ");
+altura = double.Parse(Console.ReadLine());
 
 
+area = bse * altura;
+perimetro = (bse * 2) + (altura * 2);
+diagonal = Math.Sqrt(bse * bse + altura * altura);
+
+
+Console.WriteLine("AREA DO RETANGULO: " + area);
+
+
+Console.WriteLine("PERIMETRO DO RETANGULO: " + perimetro.ToString("F4"));
+
+
+Console.WriteLine("DIAGOAL DO RETANGULO: " + diagonal.ToString("f4"));
 
 
 
